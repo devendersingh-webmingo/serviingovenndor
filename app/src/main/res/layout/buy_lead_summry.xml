@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="Summary"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBankview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_5sdp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Lead ID"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvAccNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvAccount"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAccNo"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Service Date "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/etDisbursed"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_below="@+id/tvName"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5sdp"
+
+                        android:textColor="@color/textgrey"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvLoanRepaid"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etDisbursed"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Service  Detail"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvAccountName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@+id/tvLoanRepaid"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5sdp"
+
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tvAccHolder"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvAccountName"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Loan Re-payment Status"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tvAccHolderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvAccHolder"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:text="Pending Dues"
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAccount1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Buy Lead Cost"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvAccNo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvAccount1"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5sdp"
+
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAccNo1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans"
+
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Payment Method"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvAccountName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvName1"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:text="Pending Dues"
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvIFSC1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvAccountName1"
+                        android:drawableLeft="@drawable/ic_baseline_radio_button_checked_24"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text=" wallet"
+                        android:visibility="gone"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/loan"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvIFSC1"
+                        android:drawableLeft="@drawable/ic_baseline_radio_button_checked_24"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text=" Wallet"
+                        android:textSize="15sp" />
+                    <LinearLayout
+                        android:id="@+id/llBuyLead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@+id/loan"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:background="@drawable/button"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:paddingHorizontal="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:gravity="center"
+                            android:text=" Pay Now "
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_below="@+id/loan"
+                        android:id="@+id/addfund"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+
+                       android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:text="@string/add_fund_to_wallet"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/battom_view"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans"
+
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="Recent Buy Leads"
+                android:textSize="16sp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyrecentBuyLeads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHeading"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_2sdp" />
+        </RelativeLayout>
+
+</LinearLayout>

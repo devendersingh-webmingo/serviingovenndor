@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/llSubmitNow"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="right"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_below="@+id/llCreadentials"
+        android:background="#4797CE"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/movetoHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="center"
+            android:text="Help And Support"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/lldetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/Rl_norecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@color/green"
+            android:layout_alignParentBottom="true"
+            android:text="No Records Found."
+            />
+    </RelativeLayout>
+</LinearLayout>

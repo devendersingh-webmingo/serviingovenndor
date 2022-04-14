@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/ic_rectangle_288"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_20sdp"
+            >
+
+
+                <TextView
+                    android:id="@+id/tvAccountt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:text="Current Wallet Balance"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans_semibold"/>
+                <TextView
+                    android:id="@+id/tvAccNot"
+                    android:layout_below="@+id/tvAccountt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:text="₹ 1295"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/open_sans_semibold"/>
+
+
+                <TextView
+                    android:id="@+id/tvBankingMethod"
+                    android:layout_below="@+id/tvAccNot"
+                    android:background="@drawable/white_drawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="Add Money to Wallet "
+                   android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textSize="18sp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:fontFamily="@font/open_sans_semibold"/>
+
+        </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="All Transcation History"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="Pending Creadits"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

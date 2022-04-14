@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+
+
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBankview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:background="@drawable/rectanglecard"
+
+        android:elevation="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_8sdp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingVertical="@dimen/_5sdp"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAccountt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="Total Lead Amount"
+                android:paddingVertical="@dimen/_2sdp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvAccNot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/tvAccountt"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="Commission Received"
+                android:paddingVertical="@dimen/_5sdp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvNamet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAccNot"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingVertical="@dimen/_2sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="Payment Date"
+                android:textSize="15sp" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAccountr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="₹ 5000"
+                android:textColor="#000000"
+
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvAccNo1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/tvAccountr"
+                android:textColor="#000000"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="₹ 5000"
+                android:paddingVertical="@dimen/_5sdp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvUTRNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAccNo1"
+                android:textColor="#000000"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="2 Oct 2020 |12:00 PM"
+                android:paddingVertical="@dimen/_2sdp"
+                android:textSize="15sp" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

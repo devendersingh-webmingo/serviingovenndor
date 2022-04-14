@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.VENNDOR" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="selectRelationSpinner" >
+        <item name="android:text">Select Relationship</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:foreground">@drawable/spinner_background</item>
+    </style>
+    <style name="StepsSeekBar" parent="Base.Widget.AppCompat.SeekBar">
+      <!--  <item name="android:indeterminateOnly"></item>
+        <item name="android:progressDrawable"></item>
+        <item name="android:indeterminateDrawable"></item>-->
+        <item name="android:thumb">@drawable/round</item>
+<!--
+        <item name="android:focusable"></item>
+-->
+    </style>
+    <!-- In the discrete SeekBar -->
+    <!--<item name="tickMark">&lt;!&ndash; The circles indicating steps &ndash;&gt;</item>-->
+</resources>

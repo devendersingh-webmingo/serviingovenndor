@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_5sdp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvdebit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/debit"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textgrey"
+            android:paddingVertical="@dimen/_5sdp"/>
+        <TextView
+            android:id="@+id/totalCreadit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/credits"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textgrey"
+            android:paddingVertical="@dimen/_5sdp"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/tvleaddebit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Lead Debits"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/textgrey"
+                android:paddingVertical="@dimen/_5sdp"/>
+            <TextView
+                android:id="@+id/tvbookingCommission"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Booking Commission"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/textgrey"
+                android:paddingVertical="@dimen/_5sdp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewtranscation"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Is your PPE Account finished?"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="16sp"
+            />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Report Missing/Damaged PPE items"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="16sp"
+            />
+        <ImageView
+
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+
+            />
+    </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

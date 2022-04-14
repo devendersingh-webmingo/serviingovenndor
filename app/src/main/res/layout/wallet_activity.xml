@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:background="@drawable/ic_rectangle_288">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAccountt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="Current Wallet Balance"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvAccNot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/tvAccountt"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text=" "
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+
+            <TextView
+                android:id="@+id/tvBankingMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/tvAccNot"
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@drawable/white_drawable"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="Add Money To Wallet "
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="horizontal"
+
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/walletCreditHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Wallet Credit History"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:paddingVertical="@dimen/_5sdp"/>
+            <TextView
+                android:id="@+id/allTranscationHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Transcation History"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:paddingVertical="@dimen/_5sdp"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/pendingCredits"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pending Credits"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:paddingVertical="@dimen/_5sdp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

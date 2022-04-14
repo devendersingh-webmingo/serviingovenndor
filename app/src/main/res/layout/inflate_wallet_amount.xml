@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+        <LinearLayout
+            android:id="@+id/lltodaypayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_60sdp"
+                    android:rotation="270"
+                    android:max="6" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/textgrey"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_below="@+id/tvTime"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+
+                <!--  <TextView
+                      android:id="@+id/tvName"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_30sdp"
+                      android:layout_below="@+id/tv"
+                      android:fontFamily="@font/open_sans"
+                      android:gravity="center_vertical"
+                      android:paddingHorizontal="@dimen/_10sdp"
+                      android:text="11:50 AM"
+                      android:textSize="12sp" />
+
+                  <TextView
+                      android:id="@+id/tvAccountName"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_30sdp"
+                      android:layout_below="@+id/tvName"
+                      android:layout_marginHorizontal="@dimen/_5sdp"
+                      android:gravity="center_vertical"
+                      android:text="API User has Added 109.4"
+                      android:textColor="#000000"
+                      android:fontFamily="@font/roboto"
+                      android:textSize="15sp" />
+      -->
+
+            </RelativeLayout>
+        </LinearLayout>
+
+</LinearLayout>

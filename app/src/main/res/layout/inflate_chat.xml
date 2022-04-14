@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_above="@+id/rrButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<RelativeLayout
+    android:id="@+id/rrButton"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:padding="@dimen/_5sdp"
+
+    android:layout_alignParentBottom="true"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/editText"
+        android:textSize="15sp"
+        android:background="@null"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:layout_toLeftOf="@+id/ivattachmnet"
+        android:hint="Type Here.."/>
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/ivattachmnet"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/attachment"
+        android:layout_toLeftOf="@+id/ivSend"
+      />
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/ivSend"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/sendmessage"
+     android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+</RelativeLayout>

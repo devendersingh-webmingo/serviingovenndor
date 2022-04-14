@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="#08000000"
+    android:paddingBottom="@dimen/_20sdp">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectanglecard"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:gravity="center_horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivCustomer"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/ivCamera"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_80sdp"
+                    android:src="@drawable/camera"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_Header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="@color/textgrey"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/uniqueId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUserName"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="@color/textgrey"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/tvsubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Today's Booking"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/open_sans_semibold"
+
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/allBooking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:text="View All Booking"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:textColor="#0069B2"
+                        android:textSize="18sp" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerCategories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvsubtitle" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/tvRecommendedLeads"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Recommended Leads"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvLeads"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:text="View All Leads"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:textColor="#0069B2"
+                        android:textSize="18sp" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyRecyLeads"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvRecommendedLeads" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvAccount"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text=" Todays Activities"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/open_sans_semibold"
+
+                            android:textSize="18sp" />
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyRecytoday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvRecommendedLeads" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/recentPayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:text="Recent Payout "
+                        android:textColor="#000000"
+                        android:visibility="gone"
+
+                        android:textSize="18sp" />
+
+                   <!-- <androidx.cardview.widget.CardView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_5sdp">-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/_5sdp"
+                            android:visibility="gone"
+                            >
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvRecentPayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvRecommendedLeads" />
+
+
+                        </LinearLayout>
+                  <!--  </androidx.cardview.widget.CardView>-->
+
+                    <TextView
+                        android:id="@+id/tvPendingPayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/open_sans_semibold"
+
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:visibility="gone"
+
+                        android:text="Pending Payout "
+                        android:textSize="18sp" />
+
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/_5sdp"
+                            >
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvPendingPayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvRecommendedLeads" />
+
+
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvAccounta"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text="Wallet Summary"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textSize="18sp" />
+ <TextView
+                            android:id="@+id/tvnodata"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+android:layout_marginVertical="@dimen/_5sdp"
+     android:visibility="gone"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text="No Records found"
+                            android:textColor="#000000"
+
+                            android:textSize="14sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvwalletSummary"
+                            android:background="@drawable/rectanglecard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvRecommendedLeads" />
+
+                       <!-- <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ernestoyaquello.com.verticalstepperform.VerticalStepperFormLayout
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/ivv"
+                                    android:layout_width="@dimen/_120sdp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/stepviewdashb" />
+                                &lt;!&ndash;https://androidexample365.com/vertical-stepper-form-library-for-android/&ndash;&gt;
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/tvAccNoa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:fontFamily="@font/open_sans"
+                                    android:gravity="center_vertical"
+                                    android:text="11:50 AM"
+                                    android:textColor="@color/textgrey"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/tva"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_below="@+id/tvAccNoa"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:gravity="center_vertical"
+                                    android:text="Your Wallet has Total ₹ 5000 Credit"
+                                    android:textColor="#000000"
+                                    android:fontFamily="@font/roboto"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/tvNamea"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_below="@+id/tva"
+                                    android:fontFamily="@font/open_sans"
+                                    android:gravity="center_vertical"
+                                    android:paddingHorizontal="@dimen/_10sdp"
+                                    android:text="11:50 AM"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tvAccountNamea"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_below="@+id/tvNamea"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:gravity="center_vertical"
+                                    android:text="Last Added Fund"
+                                    android:textColor="#000000"
+                                    android:fontFamily="@font/roboto"
+                                    android:textSize="15sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>-->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal"
+
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvongoing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Ongoing"
+            android:textColor="@color/textgrey"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvPending"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Pending"
+            android:textColor="@color/textgrey"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvReleased"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Released"
+            android:textColor="@color/textgrey"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+ <!--   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:background="@drawable/editborder"
+        android:paddingVertical="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:text=""
+        android:textColor="@color/textgrey"
+        android:textSize="15sp" />-->
+    <RelativeLayout
+        android:id="@+id/Rl_leads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyrecent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/Rl_noLeads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@color/green"
+            android:layout_alignParentBottom="true"
+            android:text="No Data available, Please try after sometime."
+            />
+    </RelativeLayout>
+</LinearLayout>

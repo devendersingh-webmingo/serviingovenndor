@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <!--  <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Orders And Booking"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ordersandBooking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/battom_view"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="I am receiving leads outside my Hub"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            />
+        <ImageView
+
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_group_379"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Wallets and Credits"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/walletsandcredits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/battom_view"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="I am not receiving leads"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            />
+        <ImageView
+
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_group_379"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Payout and Payments"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/PayoutandPayments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/battom_view"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="I am receiving leads outside my Hub"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            />
+        <ImageView
+
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_group_379"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Leads Related"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/leadsRelated"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/battom_view"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="I am not receiving leads"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            />
+        <ImageView
+
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_group_379"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Others"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Others"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/battom_view"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="I am receiving leads outside my Hub"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            />
+        <ImageView
+
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_group_379"
+            />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+</LinearLayout>

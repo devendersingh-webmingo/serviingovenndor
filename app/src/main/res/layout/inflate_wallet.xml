@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBankview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+      app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Date &amp; time"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvAccNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvAccount"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:text="Pending Dues"
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvAccNo"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Loan Disbursed"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/etDisbursed"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvName"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:text="Pending Dues"
+                        android:textColor="@color/textgrey"
+
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvLoanRepaid"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/etDisbursed"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Loan Re-Paid"
+                        android:textSize="12sp" />
+
+                         </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAccount1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Loan ID"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvAccNo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvAccount1"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:text="Pending Dues"
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvAccNo1"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Loan Status"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvAccountName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvName1"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:text="Pending Dues"
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvIFSC1"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@+id/tvAccountName1"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Loan Balance"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

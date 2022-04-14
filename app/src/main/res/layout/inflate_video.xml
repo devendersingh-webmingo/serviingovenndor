@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <!--
+                      <RelativeLayout
+                          android:id="@+id/rlYoutube"
+                          android:layout_width="match_parent"
+                          android:layout_height="@dimen/_180sdp"
+                          android:orientation="vertical"
+                          android:visibility="gone">
+                          <fragment
+                              android:id="@+id/youtube_player_view1"
+                              android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                              android:layout_width="match_parent"
+                              android:layout_height="@dimen/_180sdp"
+                              android:layout_gravity="center"
+                              />
+                      </RelativeLayout>
+      -->
+
+      <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+          android:id="@+id/youtube_view"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_180sdp"
+
+          />
+      <!--<com.google.android.youtube.player.YouTubeThumbnailView
+          android:id="@+id/video_thumbnail_image_view"
+          android:layout_width="@dimen/_90sdp"
+          android:layout_height="@dimen/_70sdp"
+          android:scaleType="fitXY"
+          android:visibility="gone" />-->
+     <!-- <ImageView
+          android:id="@+id/ivThumbnail"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_180sdp"
+          android:background="@mipmap/logo"
+          android:scaleType="fitXY" />-->
+     <!-- <ImageView
+          android:id="@+id/ivPlay"
+          android:layout_width="@dimen/_25sdp"
+          android:layout_height="@dimen/_25sdp"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_baseline_play_circle_outline_24"
+          />
+-->
+
+
+
+   </RelativeLayout>
+
+   <!-- <VideoView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:id="@+id/VideoView"
+        />-->
+   <!-- <WebView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:id="@+id/webview"/>-->
+<!--<com.google.android.youtube.player.YouTubePlayerView
+    android:id="@+id/player"
+    android:layout_height="@dimen/_200sdp"
+    android:layout_width="@dimen/_200sdp"/>-->
+
+
+   <!-- <com.google.android.youtube.player.YouTubePlayerView
+    android:id="@+id/player"
+    AIzaSyAExiZBclEcx0W8WyBw4O02zyZzB2a-xzA
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>-->
+</LinearLayout>

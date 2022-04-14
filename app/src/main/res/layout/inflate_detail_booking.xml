@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_icon_feather_clock"
+            android:padding="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/tvHeading"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/textColor"
+            />
+        <ImageView
+            android:id="@+id/ivIamge"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_alignParentRight="true"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_group_379"
+            android:padding="@dimen/_5sdp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2F656565"
+        android:padding="1dp" />
+</LinearLayout>

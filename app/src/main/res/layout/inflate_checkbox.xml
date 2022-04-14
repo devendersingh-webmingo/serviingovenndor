@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivchek1"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_baseline_radio_button_unchecked_24"
+            android:padding="@dimen/_2sdp"
+            android:visibility="visible"
+            app:tint="@color/black" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_toRightOf="@+id/ivchek1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/black"
+            android:text="Online Payment"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivchek2"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_baseline_radio_button_unchecked_24"
+            android:padding="@dimen/_2sdp"
+            android:visibility="visible"
+            app:tint="@color/black" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_toRightOf="@+id/ivchek2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/black"
+            android:text="Other Payment Mode"/>
+    </RelativeLayout>
+</LinearLayout>

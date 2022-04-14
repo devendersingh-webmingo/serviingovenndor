@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/act_dashboard_nav.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/activity_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/alert_bank_details.xml" value="0.25" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/bookingdetaildialogbox.xml" value="0.33" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/bookingdetailmonday.xml" value="0.31174533479692645" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/bookingmainhistory.xml" value="0.25" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/container.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/fragment_previous_booking.xml" value="0.33" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/home_activity.xml" value="0.13645833333333332" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/inflate_addonsdetails.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/inflate_commission_screen.xml" value="0.25" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/inflate_dashboard_todays.xml" value="0.25" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/inflate_dshbooking.xml" value="0.33" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/inflate_dshrecommendedbooking.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/inflate_ui.xml" value="0.25" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/inflate_vendor_commissions.xml" value="0.25" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/lead_activity.xml" value="0.13645833333333332" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/my_bookng.xml" value="0.25" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/payout_released.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/transcationhistory.xml" value="0.25" />
+        <entry key="..\:/Android sourcecode/webmingo/Vendor/app/src/main/res/layout/view_payout.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

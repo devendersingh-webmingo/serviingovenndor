@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bagm"
+                    android:paddingVertical="@dimen/_5sdp"
+                    >
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:id="@+id/tvAccountt"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text="Loan Amount	"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvAccNot"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_below="@+id/tvAccountt"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text=" ₹ 10000"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <!--<TextView
+                            android:id="@+id/tvNamet"
+                            android:layout_below="@+id/tvAccNot"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:text="Loan Dashboard"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/open_sans"/>
+                        <TextView
+                            android:id="@+id/tvpayMethod"
+                            android:layout_below="@+id/tvNamet"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:text="34446667867"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/textgrey"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/open_sans"/>
+                        <TextView
+                            android:id="@+id/tvBankingDate"
+                            android:layout_below="@+id/tvpayMethod"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:text="Loan Re-Paid"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/open_sans"/>
+                        <TextView
+                            android:id="@+id/tvBankingMethod"
+                            android:layout_below="@+id/tvBankingDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:text="22-sept"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/textgrey"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/open_sans"/>
+        -->
+                        <RelativeLayout
+                            android:id="@+id/relative"
+                            android:layout_below="@+id/tvAccNot"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp">
+
+                            <com.shuhart.stepview.StepView
+                                android:visibility="gone"
+                                android:id="@+id/step_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                app:sv_selectedCircleColor="@color/textColor"
+                                app:sv_selectedTextColor="@color/white"
+                                app:sv_stepLineWidth="1dp"
+                                app:sv_stepPadding="4dp"
+                                app:sv_nextTextColor="@color/white"
+                                app:sv_nextStepLineColor="@color/white"
+                                app:sv_doneCircleColor="@color/white"
+                                app:sv_doneStepLineColor="@color/white"
+                                app:sv_doneCircleRadius="12dp"
+                                app:sv_selectedCircleRadius="12dp"
+                                app:sv_selectedStepNumberColor="@color/white"
+                                app:sv_stepViewStyle="@style/StepView"
+                                app:sv_doneStepMarkColor="@color/white"
+                                app:sv_stepNumberTextSize="12sp"
+                                app:sv_animationType="Line"
+                                app:sv_typeface="@font/roboto"/>
+
+                            <ImageView
+                                android:id="@+id/ivv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/sendors"
+                                android:scaleType="centerCrop"/>
+                            <ImageView
+                                android:layout_below="@+id/ivv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/textss" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tvBankingMethod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_below="@+id/relative"
+                            android:layout_centerInParent="true"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:background="@drawable/white_border"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text="Apply New Loan "
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/rectanglecard"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+
+                <TextView
+                    android:id="@+id/tvim"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/relView"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tvViewAll"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="View All"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+
+
+                        />
+
+                </RelativeLayout>
+
+                <!-- <HorizontalScrollView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+
+                     android:scrollbars="none">-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relView"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/inflate_commission" />
+                <!--</HorizontalScrollView>-->
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

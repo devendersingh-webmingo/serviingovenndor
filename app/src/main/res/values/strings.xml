@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Serviingo
+    \n Partner</string>
+
+    <string name="textbelow">By logging, you agree to our <font fgcolor="#0088FF"> <a href="https://www.serviingo.com/home/terms">Terms and Conditions</a> </font>of Use  &amp;  </string>
+    <string name="pp"><font fgcolor="#4797CE"><a href="https://www.serviingo.com/home/privacy"> Privacy Policy
+    </a></font></string>
+    <string name="loginmobilenumber">Login with Mobile Number</string>
+    <string name="password">Login With <a><font fgcolor="#0088FF">Password</font></a></string>
+    <string name="OTP">Login using <a><font fgcolor="#0088FF"> OTP</font></a></string>
+    <!--Email-->
+    <string name="loginEmail">Login with Email</string>
+    <string name="sign_up">I\'m a new Partner,<font fgcolor="#0088FF"> Sign Up</font></string>
+    <string name="member">I\'m a already a Partner,<font fgcolor="#0088FF"> Sign In</font></string>
+    <string name="usingpassword">I want to login using my <a><font fgcolor="#0088FF"> Password</font></a></string>
+    <string name="Username">First Name</string>
+    <string name="Useremail">Email</string>
+    <string name="Usermobile">Mobile Number</string>
+    <string name="Usergender">Gender</string>
+    <string name="Userdob">DOB</string>
+    <string name="Userpassword">Password</string>
+    <string name="UserConfirmpassword">Confirm Password</string>
+    <string name="Userstate">State</string>
+    <string name="Usercity">City</string>
+    <string name="register_now">REGISTER NOW</string>
+    <string name="personal_information">Personal information :</string>
+    <string name="inform_us">If you want to deactivate your profile,fill the details in the given below text and Click on \'Contact Us\' button to inform Us</string>
+    <string name="bookings">Congratullations ! lead has been added in your
+        \n Current Bookings</string>
+    <string name="sincerely">Sincerely,
+        \n\n Support team</string>
+    <string name="lorem">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</string>
+    <string name="debit">Total debits
+        \n\n </string>
+    <string name="credits">Total Credits
+        \n\n </string>
+    <string name="please_wait">Please wait</string>
+    <string name="errorInternet">Please check your internet connection.</string>
+    <string name="_add">55/1,Om Nagar
+    \n  chandanNagar,Lucknow</string>
+    <string name="others">Others
+    \n Security Fee</string>
+    <string name="cut">1X hair Cut
+    \n Mens Haircut XT 1</string>
+    <string name="order_id">Order ID
+     \n ST-LUC-100</string>
+    <string name="give_permission">give permission</string>
+    <string name="unabletoselectimage">Unable to Select Image</string>
+    <string name="add_fund_to_wallet"><u>Add Fund To Wallet</u></string>
+    <string name="SignUphere">  Register as a Professional,<font fgcolor="#0088FF"> Sign Up here</font></string>
+    <string name="view_booking_information"><u>View Booking Information</u></string>
+    <string name="type">Type</string>
+    <string name="date_time"><![CDATA[Date & Time]]></string>
+    <string name="selectAll">Select All</string>
+</resources>
